@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# having some issues getting started, so let's get all info
+echo $1
+echo $2
+echo $3
+echo $4
+echo $PORT
+echo $USE_KEY
+echo $SSH_PORT
+echo $VBOXWEBSRVPATH
+
 [ -z "$1" ] && echo "Error: No target argument given" && exit 1;
 
 if [ "$USE_KEY" != "0" ] && [ ! -f ~/.ssh/id_rsa ]; then
